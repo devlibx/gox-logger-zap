@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	mainLogger := zap.NewZapLogger(zap.BuildZapLogger(logger.Config{
+	mainLogger := goxzap.NewZapLogger(goxzap.BuildZapLogger(logger.Config{
 		Stdout:     true,
 		Level:      "info",
 		OutputFile: "stdout",
